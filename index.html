@@ -26,7 +26,7 @@ xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "event.xml", false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
-x = xmlDoc.getElementsByTagName("music");
+x = xmlDoc.getElementsByTagName("Event");
 table="<tr><th>EVENT NAME</th><th>EVENT ARTIST</th></tr>";
 for (i = 0; i <x.length; i++) {
   table += "<tr onclick='displaytrack(" + i + ")'><td>";
